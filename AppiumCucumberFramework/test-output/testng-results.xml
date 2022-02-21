@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-19T09:23:24 EST" name="Suite" finished-at="2022-02-19T09:24:37 EST" duration-ms="72820">
+    <groups>
+      <group name="cucumber">
+        <method signature="RunnerBase.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.runners.MyPixel3TestNGRunnerTest@6379eb]" name="scenario" class="com.qa.runners.RunnerBase"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-02-19T09:23:24 EST" name="Pixel3" finished-at="2022-02-19T09:24:37 EST" duration-ms="72820">
+      <class name="com.qa.runners.MyPixel3TestNGRunnerTest">
+        <test-method is-config="true" signature="setUpClass(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.runners.MyPixel3TestNGRunnerTest@6379eb]" started-at="2022-02-19T09:23:24 EST" name="setUpClass" finished-at="2022-02-19T09:23:52 EST" duration-ms="27645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pixel_3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[11000]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[iOS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.runners.MyPixel3TestNGRunnerTest@6379eb]" started-at="2022-02-19T09:23:52 EST" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-19T09:24:08 EST" duration-ms="15934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid user name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login scenarios]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method signature="scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.runners.MyPixel3TestNGRunnerTest@6379eb]" started-at="2022-02-19T09:24:08 EST" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-19T09:24:20 EST" duration-ms="12553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login scenarios]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method signature="scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.runners.MyPixel3TestNGRunnerTest@6379eb]" started-at="2022-02-19T09:24:20 EST" name="scenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-19T09:24:31 EST" duration-ms="10308" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid user name and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login scenarios]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "element" is null
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.qa.pages.BasePage.waitForVisibility(BasePage.java:34)
+at com.qa.pages.BasePage.getAttribute(BasePage.java:78)
+at com.qa.pages.BasePage.getText(BasePage.java:91)
+at com.qa.pages.ProductsPage.getTitle(ProductsPage.java:21)
+at com.qa.stepdef.LoginStepDef.iShouldSeeProductsPageWithTitle(LoginStepDef.java:33)
+at ✽.I should see Products page with title "PRODUCTS"(file:///C:/Users/mizrh/eclipse-workspace/AppiumCucumberFramework/src/test/resources/Login.feature:26)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.qa.runners.MyPixel3TestNGRunnerTest@6379eb]" started-at="2022-02-19T09:24:31 EST" name="tearDownClass" finished-at="2022-02-19T09:24:37 EST" duration-ms="6055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.qa.runners.MyPixel3TestNGRunnerTest -->
+    </test> <!-- Pixel3 -->
+  </suite> <!-- Suite -->
+</testng-results>

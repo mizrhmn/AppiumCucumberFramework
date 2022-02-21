@@ -1,0 +1,15 @@
+[Android_pixel_3 INFO ] 2022-02-19 09:23:25.434 ServerManager:20 - starting appium server
+[Android_pixel_3 INFO ] 2022-02-19 09:23:31.000 ServerManager:29 - Appium server started
+[Android_pixel_3 INFO ] 2022-02-19 09:23:31.046 DriverManager:28 - initializing Appium driver
+[Android_pixel_3 INFO ] 2022-02-19 09:23:31.081 PropertyManager:17 - loading config properties
+[Android_pixel_3 INFO ] 2022-02-19 09:23:31.091 CapabilitiesManager:18 - getting capabilities
+[Android_pixel_3 INFO ] 2022-02-19 09:23:31.094 CapabilitiesManager:34 - appUrl isC:\Users\mizrh\eclipse-workspace\AppiumCucumberFramework\src\test\resources\apps\Android.SauceLabs.Mobile.Sample.app.2.2.1.apk
+[Android_pixel_3 INFO ] 2022-02-19 09:23:51.355 DriverManager:40 - Driver is initialized
+[Android_pixel_3 INFO ] 2022-02-19 09:24:03.092 BasePage:62 - press login button
+[Android_pixel_3 INFO ] 2022-02-19 09:24:04.562 BasePage:115 - error text is - Username and password do not match any user in this service.
+[Android_pixel_3 INFO ] 2022-02-19 09:24:08.258 VideoManager:35 - video path: Android_pixel_3\Videos\Login with invalid user name.mp4
+[Android_pixel_3 INFO ] 2022-02-19 09:24:13.133 BasePage:62 - press login button
+[Android_pixel_3 INFO ] 2022-02-19 09:24:13.600 BasePage:115 - error text is - Username and password do not match any user in this service.
+[Android_pixel_3 INFO ] 2022-02-19 09:24:20.863 VideoManager:35 - video path: Android_pixel_3\Videos\Login with invalid password.mp4
+[Android_pixel_3 INFO ] 2022-02-19 09:24:27.046 BasePage:62 - press login button
+[Android_pixel_3 INFO ] 2022-02-19 09:24:31.236 VideoManager:35 - video path: Android_pixel_3\Videos\Login with valid user name and password.mp4
